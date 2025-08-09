@@ -261,56 +261,10 @@ Memory usage scales linearly: ~100 MB per 10,000 atoms, enabling analysis of mul
 
 # Availability
 
-The software is available at https://github.com/yourusername/MemDomA under the MIT license. Documentation is hosted on Read the Docs, and test data with example notebooks are provided. We welcome contributions through GitHub pull requests.
+The software is available at https://github.com/takeshi-sato-dev/MemDomA under the MIT license. Documentation is hosted on Read the Docs, and test data with example notebooks are provided. We welcome contributions through GitHub pull requests.
 
 # Acknowledgements
 
 We thank the MDAnalysis community for providing the foundational trajectory analysis framework and the MARTINI consortium for force field parameters. This work was supported by Kyoto Pharmaceutical University Fund for the Promotion of Collaborative Research.
 
 # References
-
-<!-- Key references to be included in paper.bib:
-@article{Simons2000,
-  title={Lipid rafts and signal transduction},
-  author={Simons, Kai and Toomre, Derek},
-  journal={Nature Reviews Molecular Cell Biology},
-  volume={1},
-  pages={31--39},
-  year={2000}
-}
-
-@article{Lingwood2010,
-  title={Lipid rafts as a membrane-organizing principle},
-  author={Lingwood, Daniel and Simons, Kai},
-  journal={Science},
-  volume={327},
-  pages={46--50},
-  year={2010}
-}
-
-@article{Marrink2007,
-  title={The MARTINI force field: coarse grained model for biomolecular simulations},
-  author={Marrink, Siewert J and others},
-  journal={Journal of Physical Chemistry B},
-  volume={111},
-  pages={7812--7824},
-  year={2007}
-}
-
-@article{Gowers2016,
-  title={MDAnalysis: a Python package for the rapid analysis of molecular dynamics simulations},
-  author={Gowers, Richard J and others},
-  journal={Proceedings of the 15th Python in Science Conference},
-  pages={98--105},
-  year={2016}
-}
-
-@article{Levental2010,
-  title={Raft domains of variable properties and compositions in plasma membrane vesicles},
-  author={Levental, Ilya and others},
-  journal={PNAS},
-  volume={107},
-  pages={7340--7345},
-  year={2010}
-}
--->

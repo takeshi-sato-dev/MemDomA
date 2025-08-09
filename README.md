@@ -1,6 +1,6 @@
 # MemDomA - Membrane Domain Analysis for MARTINI Coarse-Grained Simulations
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16758554.svg)](https://doi.org/10.5281/zenodo.16758554)
 [![CI](https://github.com/takeshi-sato-dev/MemDomA/actions/workflows/CI.yml/badge.svg)](https://github.com/takeshi-sato-dev/MemDomA/actions/workflows/CI.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org)
