@@ -1,9 +1,9 @@
 # MemDomA - Membrane Domain Analysis for MARTINI Coarse-Grained Simulations
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
-[![CI](https://github.com/yourusername/MemDomA/actions/workflows/CI.yml/badge.svg)](https://github.com/yourusername/MemDomA/actions/workflows/CI.yml)
+[![CI](https://github.com/takeshi-sato-dev/MemDomA/actions/workflows/CI.yml/badge.svg)](https://github.com/takeshi-sato-dev/MemDomA/actions/workflows/CI.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org)
 
 Automated analysis of membrane domains and protein partitioning from MARTINI coarse-grained molecular dynamics simulations.
 
@@ -56,12 +56,12 @@ Unlike simple density-based methods, this package uses a **multi-parameter appro
 ## Installation
 
 ### Prerequisites
-- Python ≥ 3.8
+- Python ≥ 3.10
 - ffmpeg (for animations)
 
 ### From source
 ```bash
-git clone https://github.com/yourusername/MemDomA.git
+git clone https://github.com/takeshi-sato-dev/MemDomA.git
 cd MemDomA/memdoma
 pip install -r requirements.txt
 pip install -e .
@@ -80,7 +80,7 @@ psutil ≥ 5.8.0
 
 ## Quick Start
 
-### Using default configuration:
+### Using default configuration
 ```python
 from memdoma_package import MemDomA
 
@@ -131,21 +131,18 @@ analysis.run_analysis()
 ## Quick Test with Sample Data
 
 ### 1. Test Installation
-
 ```bash
 # Check if package imports correctly
 python -c "from memdoma_package import MemDomA; print('✓ MemDomA imported successfully!')"
 ```
 
 ### 2. Run Complete Test
-
 ```bash
 # Run complete test with sample data
 python examples/test_with_sample_data.py
 ```
 
 Or run manually:
-
 ```python
 from memdoma_package import MemDomA
 
@@ -180,86 +177,5 @@ analysis.generate_visualizations(
 ```
 
 ### 3. Check Output Files
-
 After running the test, you should see:
-- `test_output/domain_statistics.csv` - Statistical analysis
-- `test_output/domain_area_time_series.png/pdf` - Time series plots
-- `test_output/protein_domain_distribution.png/pdf` - Protein distribution
-- `test_output/membrane_domain_analysis.mp4` - Animation (requires ffmpeg)
-
-### 4. Troubleshooting
-
-**Missing ffmpeg?**
-```bash
-# Mac
-brew install ffmpeg
-
-# Linux
-sudo apt-get install ffmpeg
-
-# Check installation
-ffmpeg -version
-```
-
-**Import errors?**
-```bash
-# Reinstall package
-pip install -e .
-```
-
-## Output Files
-
-| File | Description |
-|------|-------------|
-| `domain_statistics.csv` | Protein partitioning and lipid distribution statistics |
-| `domain_area_time_series.png/pdf` | Domain area evolution over time |
-| `protein_domain_distribution.png/pdf` | Bar chart of protein domain preferences |
-| `membrane_domain_analysis.mp4` | Animation of membrane phase evolution |
-
-## Performance
-
-- Processes ~1000 frames/hour for 150,000 atom system (8 cores)
-- Memory: ~100 MB per 10,000 atoms
-- Tested on systems from 50,000 to 500,000 atoms
-
-## Citation
-
-If you use this software, please cite:
-
-```bibtex
-@article{memdoma2025,
-  title={MemDomA: Automated detection of membrane domains in MARTINI simulations},
-  author={Your Name and Collaborators},
-  journal={Journal of Open Source Software},
-  year={2025},
-  doi={10.21105/joss.XXXXX}
-}
-
-@article{martini2007,
-  title={The MARTINI force field: coarse grained model for biomolecular simulations},
-  author={Marrink, Siewert J and others},
-  journal={J. Phys. Chem. B},
-  volume={111},
-  pages={7812--7824},
-  year={2007}
-}
-```
-
-## Contributing
-
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file
-
-## Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/MemDomA/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/MemDomA/discussions)
-
-## Acknowledgments
-
-- MDAnalysis community
-- MARTINI force field developers
-- [Your funding sources]
+- `test_output
