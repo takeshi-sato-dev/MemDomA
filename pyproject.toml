@@ -1,0 +1,101 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memdoma"
+version = "0.1.0"
+authors = [
+    {name = "Takeshi Sato", email = "your.email@example.com"},
+]
+description = "MemDomA: Membrane Domain Analysis for MARTINI MD simulations"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Biophysics",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "MDAnalysis>=2.0.0",
+    "numpy>=1.20.0",
+    "pandas>=1.3.0",
+    "scipy>=1.7.0",
+    "matplotlib>=3.4.0",
+    "psutil>=5.8.0",
+    "tqdm>=4.62.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "mypy>=0.950",
+]
+docs = [
+    "sphinx>=4.0.0",
+    "sphinx-rtd-theme>=1.0.0",
+]
+performance = [
+    "numba>=0.54.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/takeshi-sato-dev/MemDomA"
+"Bug Tracker" = "https://github.com/takeshi-sato-dev/MemDomA/issues"
+"Documentation" = "https://memdoma.readthedocs.io"
+
+[project.scripts]
+memdoma = "memdoma_package.cli:main"
+
+[tool.setuptools]
+packages = ["memdoma_package", 
+            "memdoma_package.core",
+            "memdoma_package.visualization",
+            "memdoma_package.processing",
+            "memdoma_package.utils"]
+
+[tool.setuptools.package-data]
+memdoma_package = ["*.json", "*.yaml"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+[tool.coverage.run]
+source = ["memdoma_package"]
+omit = ["*/tests/*", "*/test_*.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py310', 'py311']
+include = '\.pyi?$'
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

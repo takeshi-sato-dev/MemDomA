@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: 'MemDomA: Membrane Domain Analysis for MARTINI MD Simulations'
+message: 'If you use this software, please cite it as below.'
+type: software
+authors:
+  - given-names: Takeshi
+    family-names: Sato
+    email: your.email@example.com
+    affiliation: Kyoto Pharmaceutical University
+repository-code: 'https://github.com/yourusername/MemDomA'
+url: 'https://memdoma.readthedocs.io'
+abstract: >-
+  MemDomA is a Python package for automated detection and
+  characterization of membrane domains from MARTINI
+  coarse-grained molecular dynamics simulations. The software
+  identifies cholesterol/sphingomyelin-rich (CS-rich) and
+  disordered (D-rich) regions using a multi-parameter approach
+  that combines lipid order parameters, density distributions,
+  and compositional analysis.
+keywords:
+  - molecular dynamics
+  - membrane domains
+  - lipid rafts
+  - MARTINI
+  - coarse-grained
+  - biophysics
+  - computational biology
+license: MIT
+version: 0.1.0
+date-released: '2025-08-09'

@@ -1,0 +1,26 @@
+# Core dependencies
+MDAnalysis>=2.0.0
+numpy>=1.20.0
+pandas>=1.3.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+
+# Parallel processing
+psutil>=5.8.0
+tqdm>=4.62.0
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Optional for enhanced performance
+numba>=0.54.0  # Optional: for JIT compilation
+
+# Documentation (optional)
+sphinx>=4.0.0  # Optional: for docs
+sphinx-rtd-theme>=1.0.0  # Optional: for docs
+
+# Development tools (optional)
+black>=22.0.0  # Optional: code formatting
+flake8>=4.0.0  # Optional: linting
+mypy>=0.950  # Optional: type checking
