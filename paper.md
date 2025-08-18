@@ -20,6 +20,8 @@ affiliations:
  
 date: 09 August 2025
 bibliography: paper.bib
+epository: https://github.com/takeshi-sato-dev/memdoma
+archive_doi: 10.5281/zenodo.16787749  
 ---
 
 
